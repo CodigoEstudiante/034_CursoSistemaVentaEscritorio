@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--sistema creado por el canal yt codigo estudiante-->
+    <title>Web Page Design</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table border="0" style="width:100%">
+        <tr>
+
+            <td style="width:15%" valign="top"></td>
+            <td style="width:60%" valign="top" align="center">
+
+                <label style="font-size:20px;font-weight:bold;margin-bottom:10px">@nombrenegocio</label><br />
+                <div style="height:12px !important"></div>
+                <label style="font-size:11px;">RUC: @docnegocio</label><br />
+                <label style="font-size:11px;">Dirección: @direcnegocio</label><br />
+            </td>
+            <td style="width:25%;" align="right" valign="top">
+                <table style="width:100%" class="border">
+                    <tr>
+                        <td align="center" style="background-color:#CACACA">
+                            <label style="font-size:15px;font-weight:bold">@tipodocumento</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <label style="font-size:15px;font-weight:bold">@numerodocumento</label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="height:15px !important"></div>
+    <hr />
+
+    <table border="0" style="width:100%">
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Documento Cliente:</label></td>
+			<td style="width:20%"><label style="font-size:12px;">@doccliente</label></td>
+        </tr>
+		<tr>
+			<td style="width:20%"><label style="font-size:12px;font-weight:bold">Nombre Cliente:</label></td>
+			<td style="width:20%"><label style="font-size:12px;">@nombrecliente</label></td>
+		</tr>
+		<tr>
+			<td style="width:20%"><label style="font-size:12px;font-weight:bold">Fecha Registro:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@fecharegistro</label></td>
+        </tr>
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Usuario Registro:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@usuarioregistro</label></td>
+        </tr>
+
+
+    </table>
+    <div style="height:15px !important"></div>
+    <table style="width:100%;font-size:12px;" class="border">
+        <thead>
+            <tr style="background-color:#CACACA">
+                <th>Producto</th>
+				<th>Precio</th>
+                <th>Cantidad</th>
+                <th>Sub Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @filas
+        </tbody>
+    </table>
+
+    <div style="height:15px !important"></div>
+    <table style="width:35%;font-size:12px;" class="border">
+        <thead>
+            <tr style="background-color:#CACACA">
+                <th>Monto Total</th>
+                <th>Pago Con</th>
+                <th>Cambio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@montototal</td>
+                <td>@pagocon</td>
+                <td>@cambio</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
